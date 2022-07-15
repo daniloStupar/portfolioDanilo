@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Rubik, semi-serif;
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: 100vh;
+}
+/* VIDEO BACKGROUND */
+video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+/* NAVIGATION */
+header ul {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(36, 184, 184);
+  align-items: center;
+  background-color: rgba(11, 10, 10, 0.616);
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+header {
+  display: fixed;
+}
+header ul li a {
+  color: rgb(36, 184, 184);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 800;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li a:hover {
+  background-color: rgba(36, 184, 184, 0.55);
+  color: black;
+}
+
+.active {
+  background-color: rgba(36, 184, 184, 0.876);
+  color: black;
+}
+
+.dropdown-menu ul {
+  display: none;
+}
+
+nav {
+}
+/*////////HAMBURGER/////////////////*/
+.topnav {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(36, 184, 184, 0.498);
+  height: 5rem;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.topnav #links {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  width: 100px;
+  height: 5rem;
+  background-color: rgba(36, 184, 184, 0.827);
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  display: block;
+}
+.topnav a:first-child {
+  width: 15rem;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* TEXT ANIMATION */
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 1rem solid rgba(36, 184, 184, 0.827);
+  white-space: nowrap;
+  margin: 0 150px;
+  letter-spacing: 0.7rem;
+  animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
+  width: auto;
+  color: rgba(36, 184, 184, 0.827);
+  font-size: 6.2rem;
+  position: absolute;
+  top: 450px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(36, 184, 184, 0.827);
+  }
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(36, 184, 184, 0.498);
+  position: fixed;
+  bottom: 0px;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.copy {
+  font-size: 1.8rem;
+  margin-right: 4rem;
+}
+
+i {
+  color: black;
+}
+
+.textQuery {
+  margin: auto auto auto auto;
+  color: rgba(36, 184, 184, 0.827);
+  display: none;
+}
+
+.center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

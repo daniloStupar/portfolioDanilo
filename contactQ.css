@@ -1,0 +1,30 @@
+@media (max-width: 1610px) {
+  .container {
+    display: block;
+  }
+  .myInfo {
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-right: auto;
+  }
+  .contactMe {
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto;
+    height: auto;
+  }
+
+  video {
+    object-fit: cover;
+  }
+  form {
+    margin-bottom: 70px;
+  }
+  footer {
+    background-color: rgb(36, 184, 184);
+  }
+}
+
+@media (max-width: 600px) {
+}
